@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="swu-gps-dev"
+    xmlns="http://www.topografix.com/GPX/1/1">
+  <wpt lat="29.8230" lon="106.4210">
+    <name>西南大学北碚校区</name>
+    <desc>模拟器测试用定位点</desc>
+  </wpt>
+</gpx>

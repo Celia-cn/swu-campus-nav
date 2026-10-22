@@ -1,0 +1,237 @@
+@import './variables.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  color: var(--text-main);
+  background: var(--surface-soft);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--brand-accent-dark);
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--stroke-soft);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-weight: 600;
+  transition: opacity 0.15s, transform 0.1s;
+}
+
+.btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.btn:not(:disabled):active {
+  transform: scale(0.98);
+}
+
+.btn-primary {
+  color: #fff;
+  background: linear-gradient(135deg, var(--brand-accent), var(--brand-accent-dark));
+}
+
+/* 与 Android 登录按钮一致：暖阳黄 → 清透青渐变 + 深灰文字 */
+.btn-login {
+  color: var(--login-btn-text);
+  background: var(--login-btn-gradient);
+  border: none;
+  border-radius: 28px;
+  font-weight: 700;
+  padding: 8px 18px;
+  font-size: 14px;
+  box-shadow: 0 2px 8px rgba(253, 224, 141, 0.35);
+}
+
+.btn-login:not(:disabled):hover {
+  filter: brightness(1.03);
+}
+
+.btn-login-sm {
+  padding: 6px 14px;
+  font-size: 13px;
+  border-radius: 20px;
+}
+
+a.btn-login {
+  text-decoration: none;
+  display: inline-flex;
+}
+
+.btn-secondary {
+  color: var(--text-main);
+  background: var(--surface-soft-alt);
+  border: 1px solid var(--stroke-soft);
+}
+
+.btn-danger {
+  color: var(--danger);
+  background: #fff5f5;
+  border: 1px solid #ffcdd2;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.field label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-sub);
+}
+
+.field input,
+.field textarea,
+.field select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #e8ecf2;
+  border-radius: var(--radius-sm);
+  background: #fff;
+  color: var(--text-main);
+}
+
+.field input:focus,
+.field textarea:focus,
+.field select:focus {
+  outline: none;
+  border-color: var(--brand-accent);
+  box-shadow: 0 0 0 3px rgba(155, 196, 176, 0.25);
+}
+
+.field-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+@media (max-width: 768px) {
+  .field-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+table.data-table th,
+table.data-table td {
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid #eef2f0;
+}
+
+table.data-table th {
+  color: var(--text-sub);
+  font-weight: 600;
+  background: var(--surface-soft-alt);
+}
+
+table.data-table tr:hover td {
+  background: rgba(253, 224, 141, 0.12);
+}
+
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.badge-admin {
+  background: rgba(155, 196, 176, 0.25);
+  color: var(--brand-accent-dark);
+}
+
+.badge-user {
+  background: #f0f4f8;
+  color: var(--text-sub);
+}
+
+.badge-pending {
+  background: rgba(253, 224, 141, 0.45);
+  color: #8a6d1a;
+}
+
+.badge-completed {
+  background: rgba(126, 184, 154, 0.3);
+  color: #3d7a62;
+}
+
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  padding: 12px 18px;
+  border-radius: var(--radius-sm);
+  color: #fff;
+  font-size: 14px;
+  box-shadow: var(--shadow);
+  animation: slideIn 0.25s ease;
+}
+
+.toast-success {
+  background: var(--brand-accent-dark);
+}
+
+.toast-error {
+  background: var(--danger);
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

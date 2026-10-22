@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="swu-gps-dev"
+    xmlns="http://www.topografix.com/GPX/1/1">
+  <trk>
+    <name>西南大学校内测试路线</name>
+    <trkseg>
+      <trkpt lat="29.8207" lon="106.4236">
+        <name>南门</name>
+      </trkpt>
+      <trkpt lat="29.8230" lon="106.4210">
+        <name>校园中心</name>
+      </trkpt>
+      <trkpt lat="29.8251" lon="106.4202">
+        <name>25教学楼附近</name>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

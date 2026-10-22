@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- 品牌渐变色系：暖阳黄 → 清透青（与登录页一致） -->
+    <color name="brand_gradient_start">#FDE08D</color>
+    <color name="brand_gradient_end">#CCF5F8</color>
+    <color name="brand_gradient_mid">#E4EFC6</color>
+    <color name="brand_accent">#9BC4B0</color>
+    <color name="brand_accent_dark">#5A9A8A</color>
+    <color name="brand_link">#C5D86D</color>
+
+    <!-- 兼容旧引用名 -->
+    <color name="brand_primary">#9BC4B0</color>
+    <color name="brand_primary_dark">#5A9A8A</color>
+    <color name="brand_secondary">#CCF5F8</color>
+
+    <color name="surface_soft">#FFFBF7</color>
+    <color name="surface_soft_alt">#F5FDFE</color>
+    <color name="text_main">#1A1F36</color>
+    <color name="text_sub">#5C6583</color>
+    <color name="map_card_bg">#FFFEFE</color>
+    <color name="map_shadow">#22000000</color>
+    <color name="success_green">#7EB89A</color>
+
+    <color name="brand_stroke_soft">#D9EBD0</color>
+    <color name="brand_fence_fill">#33FDE08D</color>
+    <color name="brand_fence_stroke">#CC5A9A8A</color>
+    <color name="campus_boundary_stroke">#9A6B3A</color>
+    <color name="campus_boundary_fill">#1A9A6B3A</color>
+    <color name="brand_track">#999BC4B0</color>
+    <color name="route_spot_highlight">#1565C0</color>
+
+    <color name="route_drive">#5A9A8A</color>
+    <color name="route_bus">#7EB8C0</color>
+    <color name="route_taxi">#E0C060</color>
+    <!-- 导航折线：高对比度，避免与绿地背景混淆 -->
+    <color name="route_walk_line">#FF1565C0</color>
+    <color name="route_drive_line">#FF2E7D32</color>
+    <color name="route_bus_line">#FF6A1B9A</color>
+    <color name="route_taxi_line">#FFE65100</color>
+
+    <!-- 登录页别名 -->
+    <color name="login_bg">#FFFFFF</color>
+    <color name="login_decor_yellow">#FDE08D</color>
+    <color name="login_decor_cyan">#CCF5F8</color>
+    <color name="login_input_stroke">#E8ECF2</color>
+    <color name="login_link">#C5D86D</color>
+    <color name="login_hint">#B8BEC8</color>
+</resources>

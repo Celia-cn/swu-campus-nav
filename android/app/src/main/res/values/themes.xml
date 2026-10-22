@@ -1,0 +1,42 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.Gps" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/brand_accent</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/brand_gradient_end</item>
+        <item name="colorOnSecondary">@color/text_main</item>
+        <item name="colorPrimaryContainer">@color/brand_gradient_start</item>
+        <item name="colorOnPrimaryContainer">@color/text_main</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/surface_soft</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowBackground">@drawable/bg_brand_gradient_vertical</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="Theme.Gps" parent="Base.Theme.Gps" />
+
+    <style name="Theme.Gps.Login" parent="Theme.Gps">
+        <item name="android:windowBackground">@color/login_bg</item>
+        <item name="android:navigationBarColor">@color/login_bg</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="Theme.Gps.Splash" parent="Theme.Gps">
+        <item name="android:windowBackground">@drawable/bg_brand_gradient_vertical</item>
+    </style>
+
+    <style name="Widget.Login.TextInput" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundMode">outline</item>
+        <item name="boxBackgroundColor">@color/white</item>
+        <item name="boxStrokeColor">@color/login_input_stroke</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+        <item name="boxCornerRadiusTopStart">28dp</item>
+        <item name="boxCornerRadiusTopEnd">28dp</item>
+        <item name="boxCornerRadiusBottomStart">28dp</item>
+        <item name="boxCornerRadiusBottomEnd">28dp</item>
+        <item name="hintTextColor">@color/login_hint</item>
+        <item name="android:textColorHint">@color/login_hint</item>
+    </style>
+</resources>

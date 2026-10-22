@@ -1,0 +1,16 @@
+# 复制本文件为 application-local.properties（与 application.properties 同目录或项目根目录均可）
+# 配置后重启后端。请勿将 application-local.properties 提交到 Git。
+
+# MySQL 账号（覆盖 application.properties 中的占位密码）
+spring.datasource.username=root
+spring.datasource.password=your_mysql_password
+
+# 必填：DeepSeek API Key（https://platform.deepseek.com）
+app.deepseek.api-key=sk-your-deepseek-api-key
+
+# 推荐：深度推理模型（响应约 10～60 秒）
+app.deepseek.model=deepseek-reasoner
+
+# 若追求更快响应，可改为：
+# app.deepseek.model=deepseek-chat
+# app.deepseek.max-tokens=2048
